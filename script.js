@@ -26,6 +26,6 @@ function nextImg() {
   sliderImgElem.setAttribute("src", imgSrcArray[imgIndex]);
   console.log(imgIndex, imgSrcArray[imgIndex]);
 }
-
+setInterval(nextImg, 3000);
 preBtn.addEventListener("click", prevImg);
 nxtBtn.addEventListener("click", nextImg);
